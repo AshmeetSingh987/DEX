@@ -129,7 +129,7 @@ const Exchange=({ pools }) => {
             {approvedNeeded&&!isSwapping? (
                 <button
                     disabled={!canApprove}
-                    onClick={() => { }}
+                    onClick={onApproveRequested}
                     className={
                         `${canApprove?
 
@@ -142,7 +142,7 @@ const Exchange=({ pools }) => {
                 </button>
             ):<button
                 disabled={!canSwap}
-                onClick={() => { }}
+                onClick={onSwapRequested}
                 className={
                     `${canSwap?
 
